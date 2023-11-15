@@ -1,69 +1,44 @@
-# base
+# VUE 3 FRONT-END MIFIEL WIDGET
 
-## Project setup
+A basic Vue 3 project that uses MIFIEL widget to sign documents
+
+
+## Getting Started
+
+Follow these steps to get the application up and running:
+
+##### 1. Clone this repository to your local machine:
 
 ```
-# yarn
-yarn
+git clone <repository-url>
+cd <repository-directory>
+```
+##### 2. Install the required npm packages:
 
-# npm
+```
 npm install
-
-# pnpm
-pnpm install
-
-# pnpm
-bun install
 ```
-
-### Compiles and hot-reloads for development
+##### 3. Edit the `/src/store/index.js` file with the following content:
 
 ```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# bun
-bun run dev
+state () {
+        return {
+            url: '<Backend-URL>', // Back-end route
+        }
+    }
 ```
 
-### Compiles and minifies for production
+##### 4. Build the app:
 
 ```
-# yarn
-yarn build
-
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# bun
-bun run build
 ```
 
-### Lints and fixes files
+Now the `dist` directory is created, you can serve it with any web server like Apache, Nginx etc.
 
-```
-# yarn
-yarn lint
+##### 4. Copy the dist directory
 
-# npm
-npm run lint
 
-# pnpm
-pnpm lint
+### License
 
-# bun
-bun run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+This project is licensed under the MIT License.
