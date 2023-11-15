@@ -1,12 +1,11 @@
 import { createStore } from 'vuex'
-import axios from 'axios'
 
 // Create a new store instance.
 const store = createStore({
     state () {
         return {
             user: null,
-            url: 'http://192.141.125.8:6868',
+            url: 'http://192.141.125.8:6868', // Back-end route
             base64: null
         }
     },
